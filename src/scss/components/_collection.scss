@@ -1,0 +1,38 @@
+.collection {
+  position: relative;
+
+  &__bg {
+    min-height: 600px;
+    background: url("../images/new-collection.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  &__wrapper {
+    max-width: 510px;
+    padding: 150px 0;
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 49px;
+    font-weight: 400;
+    font-size: 48px;
+    color: var(--light-color);
+  }
+
+  &__title-color {
+    display: block;
+    margin-bottom: 10px;
+    font-family: var(--third-family);
+    font-weight: 900;
+    font-size: 60px;
+    line-height: 120%;
+    color: #d5b986;
+  }
+
+  &__btn {
+    padding: 22px 31.5px;
+  }
+}

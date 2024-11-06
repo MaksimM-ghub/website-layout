@@ -1,0 +1,112 @@
+.special-offers {
+  padding-top: 70px;
+  padding-bottom: 35px;
+
+  &__title {
+    margin-bottom: 26px;
+  }
+
+  &__item {
+    position: relative;
+    grid-column: 3 span;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    min-height: 511px;
+    border-radius: 10px;
+    background: var(--light-gray);
+    transition: all 0.3s ease-in-out;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    min-height: 214px;
+    padding: 16px 30px 30px 30px;
+  }
+
+  &__item:nth-child(1) {
+    padding-top: 72px;
+  }
+
+  &__item:nth-child(2) {
+    grid-column: 6 span;
+    padding-top: 37px;
+    background-image: url('../images/construction-sofaz44.svg');
+    background-repeat: no-repeat;
+    background-position: bottom 30px right 30px;
+    background-size: 230px 107px;
+  }
+
+  &__item:nth-child(3) {
+    padding-top: 64px
+  }
+
+  &__item:nth-child(4) {
+    display: none;
+  }
+
+  &__item:nth-child(5) {
+    display: none;
+  }
+
+  &__item:nth-child(6) {
+    display: none;
+  }
+
+  &__picture {
+    margin: 0 auto;
+    line-height: 0;
+  }
+
+  &__subtitle {
+    margin: 0;
+    margin-bottom: 22px;
+    max-width: 225px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 130%;
+    color: var(--black-color);
+  }
+
+  &__price-wrapper {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 23px;
+  }
+
+  &__price {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 130%;
+    color: var(--orange-color);
+  }
+
+  &__price--sale {
+    color: var(--black-color);
+    text-decoration: line-through;
+  }
+
+  &__btn {
+    margin-top: auto;
+  }
+
+  &__sticker {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 34px;
+    padding: 7px 29px 7px 19px;
+    width: 98px;
+    clip-path: polygon(0% 0%, 85% 0%, 97% 50%, 85% 100%, 0% 100%);
+    background: var(--orange-color);
+    font-weight: 700;
+    font-size: 14px;
+    color: var(--light-color);
+  }
+}

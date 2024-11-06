@@ -1,0 +1,64 @@
+.label {
+  display: flex;
+  user-select: none;
+  cursor: pointer;
+
+  &__checkbox {
+    appearance: none;
+  }
+
+  &__text {
+    position: relative;
+    padding-left: 22px;
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--black-color);
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 50%;
+      width: 14px;
+      height: 14px;
+      border-radius: 2px;
+      border: 1px solid var(--gray-color);
+      transform: translateY(-50%);
+      transition: background 0.4s ease-in-out;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 2px;
+      top: 65%;
+      z-index: 1;
+      width: 14px;
+      height: 14px;
+      transform: translateY(-50%);
+      background-image: url("../images/chek.svg");
+      background-repeat: no-repeat;
+      opacity: 0;
+      transition: opacity 0.4s ease-in-out;
+    }
+  }
+
+  &__link {
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    color: var(--purple-color);
+  }
+
+  &__checkbox:checked + &__text::after {
+    opacity: 1;
+  }
+
+  &__checkbox:checked + &__text::before {
+    background: var(--purple-color);
+  }
+
+  &__checkbox:focus-visible + &__text::before {
+    outline-offset: 3px;
+    outline: 1px solid var(--purple-color);
+  }
+}

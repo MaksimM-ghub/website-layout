@@ -1,0 +1,25 @@
+// базовые подключения
+@import "vars";
+@import "mixins";
+@import "fonts";
+@import "global";
+
+// подключения компонентов страницы
+@import "./components/header";
+@import "./components/hero";
+@import "./components/special-offers";
+@import "./components/rating";
+@import "./components/collection";
+@import "./components/categories";
+@import "./components/useful";
+@import "./components/feedback";
+@import "./components/custom-checkbox";
+@import "./components/form";
+@import "./components/footer";
+@import "./components/catalog";
+@import "./components/product";
+@import "./components/card-product";
+@import "./components/suppliers";
+@import "./components/advantages";
+@import "./components/garantees";
+@import "media";

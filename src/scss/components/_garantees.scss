@@ -1,0 +1,53 @@
+.garantees {
+  padding-bottom: 70px;
+
+  &__wrapper {
+    width: 100%;
+  }
+
+  &__list {
+    // grid-column: 8 span;
+    // grid-row: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 65%;
+    margin: 0;
+    padding: 0;
+    padding-left: 20px;
+    gap: 12px;
+    margin-bottom: 32px;
+  }
+
+  &__item {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 180%;
+    color: var(--gray-color);
+
+    &::marker {
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 180%;
+      color: var(--orange-color);
+    }
+  }
+
+  &__info {
+    // grid-column: 8 span;
+    // grid-row: 2;
+    margin: 0;
+    min-height: 116px;
+    padding-left: 109px;
+    padding-top: 20px;
+    width: 50%;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 150%;
+    color: var(--black-color);
+    background: url("../images/pencile.webp");
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: 77px 116px;
+  }
+}

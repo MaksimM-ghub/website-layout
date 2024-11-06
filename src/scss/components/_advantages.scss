@@ -1,0 +1,38 @@
+.advantages {
+  &__list {
+    grid-column: 8 span;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 39px;
+  }
+
+  &__item {
+    grid-column: 8 span;
+  }
+
+  &__possibility {
+    display: inline-block;
+    margin-bottom: 12px;
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--orange-color);
+  }
+
+  &__subtitle {
+    margin: 0;
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 24px;
+    color: var(--black-color);
+  }
+
+  &__text {
+    margin: 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 180%;
+    color: var(--gray-color);
+  }
+}

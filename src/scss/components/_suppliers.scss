@@ -1,0 +1,65 @@
+.suppliers {
+  &__wrapper {
+    grid-column: 8 span;
+    padding-top: 24px;
+  }
+
+  &__title {
+    margin-bottom: 32px;
+  }
+
+  &__subtitle {
+    margin: 0;
+    margin-bottom: 19px;
+    font-weight: 400;
+    font-size: 24px;
+    color: var(--black-color);
+  }
+
+  &__info {
+    margin: 0;
+    margin-bottom: 32px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 180%;
+    color: var(--gray-color);
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    max-width: 587px;
+    margin-bottom: 32px;
+  }
+
+  &__item {
+    padding-left: 37px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: var(--gray-color);
+
+    &:nth-child(1) {
+      background: url("../images/network.svg");
+      background-repeat: no-repeat;
+      background-position: top left;
+      background-size: 25px 25px;
+    }
+
+    &:nth-child(2) {
+      background: url("../images/briefcase.svg");
+      background-repeat: no-repeat;
+      background-position: top left;
+      background-size: 25px 25px;
+    }
+
+    &:nth-child(3) {
+      background: url("../images/git-pull-request.svg");
+      background-repeat: no-repeat;
+      background-position: top left;
+      background-size: 25px 25px;
+    }
+  }
+}

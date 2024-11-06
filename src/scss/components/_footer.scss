@@ -1,0 +1,135 @@
+.footer {
+  position: relative;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    min-height: 136px;
+    background-color: var(--light-gray);
+  }
+
+  &__top {
+    padding: 24px 0;
+  }
+
+  &__left {
+    grid-column: 2 span;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 25px;
+  }
+
+  &__logo {
+    transition: all 0.2s ease-in-out;
+  }
+
+  &__logo:focus {
+    outline: 2px solid var(--orange-color);
+  }
+
+  &__nav {
+    grid-column: 5/8 span;
+    padding-top: 5px;
+  }
+
+  &__list {
+    display: flex;
+    // flex-wrap: wrap;
+    gap: 112px;
+    row-gap: 20px;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  &__item:nth-child(2) {
+    width: 170px;
+  }
+
+
+  &__item:nth-child(3) {
+    width: 156px;
+  }
+
+  &__nav-title {
+    margin: 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    color: var(--black-color);
+  }
+
+  &__social {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 300px;
+    gap: 10px;
+  }
+
+  &__social-ok,
+  &__social-vk {
+    width: 30px;
+    height: 30px;
+    fill: var(--gray-color);
+    transition: fill 0.3s ease-in-out;
+  }
+
+  &__bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__reg {
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--gray-color);
+  }
+}
+
+.social {
+
+  &__item {
+    padding: 3px;
+    transition: all 0.3s ease-in-out;
+    &:focus {
+      background: var(--purpleLight-color);
+    }
+  }
+
+  &__item:focus .footer__social-ok {
+    fill: var(--light-gray);
+  }
+
+
+  &__item:focus .footer__social-vk {
+    fill: var(--light-gray);
+  }
+
+  &__item:hover .footer__social-ok {
+    fill: var(--purple-color);
+  }
+
+  &__item:hover .footer__social-vk {
+    fill: var(--purple-color);
+  }
+
+  &__item:active .footer__social-ok {
+    fill: var(--purpleShade-color);
+  }
+
+
+  &__item:active .footer__social-vk {
+    fill: var(--purpleShade-color);
+  }
+}
